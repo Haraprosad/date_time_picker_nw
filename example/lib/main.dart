@@ -1,4 +1,4 @@
-import 'package:date_time_picker/date_time_picker.dart';
+import 'package:date_time_picker_nw/date_time_picker_nw.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart';
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
           key: _oFormKey,
           child: Column(
             children: <Widget>[
-              DateTimePicker(
+              DateTimePickerNw(
                 type: DateTimePickerType.dateTimeSeparate,
                 dateMask: 'd MMM, yyyy',
                 controller: _controller1,
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 onSaved: (val) => setState(() => _valueSaved1 = val ?? ''),
               ),
-              DateTimePicker(
+              DateTimePickerNw(
                 type: DateTimePickerType.dateTime,
                 dateMask: 'd MMMM, yyyy - hh:mm a',
                 controller: _controller2,
@@ -134,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 onSaved: (val) => setState(() => _valueSaved2 = val ?? ''),
               ),
-              DateTimePicker(
+              DateTimePickerNw(
                 type: DateTimePickerType.date,
                 //dateMask: 'yyyy/MM/dd',
                 controller: _controller3,
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 onSaved: (val) => setState(() => _valueSaved3 = val ?? ''),
               ),
-              DateTimePicker(
+              DateTimePickerNw(
                 type: DateTimePickerType.time,
                 //timePickerEntryModeInput: true,
                 //controller: _controller4,

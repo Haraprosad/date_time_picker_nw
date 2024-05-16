@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-library date_time_picker;
+library date_time_picker_nw;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -124,7 +124,7 @@ enum DateTimePickerType { date, time, dateTime, dateTimeSeparate }
 ///    surround the actual text editing widget.
 ///  * Learn how to use a [TextEditingController] in one of our
 ///  [cookbook recipe]s.(https://flutter.dev/docs/cookbook/forms/text-field-changes#2-use-a-texteditingcontroller)
-class DateTimePicker extends FormField<String> {
+class DateTimePickerNw extends FormField<String> {
   /// Creates a [DateTimePicker] that contains a [TextField].
   ///
   /// When a [controller] is specified, [initialValue] must be null (the
@@ -134,7 +134,7 @@ class DateTimePicker extends FormField<String> {
   ///
   /// For documentation about the various parameters, see the [TextField] class
   /// and [new TextField], the constructor.
-  DateTimePicker({
+  DateTimePickerNw({
     Key? key,
     this.type = DateTimePickerType.date,
     this.controller,
@@ -525,7 +525,7 @@ class _DateTimePickerState extends FormFieldState<String> {
   String _sPeriod = '';
 
   @override
-  DateTimePicker get widget => super.widget as DateTimePicker;
+  DateTimePickerNw get widget => super.widget as DateTimePickerNw;
 
   TextEditingController? get _effectiveController =>
       widget.controller ?? _stateController;
@@ -597,7 +597,7 @@ class _DateTimePickerState extends FormFieldState<String> {
   }
 
   @override
-  void didUpdateWidget(DateTimePicker oldWidget) {
+  void didUpdateWidget(DateTimePickerNw oldWidget) {
     super.didUpdateWidget(oldWidget);
     final languageCode = widget.locale?.languageCode;
 

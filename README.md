@@ -1,11 +1,10 @@
-# date_time_picker
+# date_time_picker_nw
 
 [![pub package](https://img.shields.io/pub/v/date_time_picker.svg)](https://pub.dartlang.org/packages/date_time_picker)
 
-<a href="https://www.buymeacoffee.com/hslbetto" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Beer" style="width: 150px !important;"></a>
-
 A Flutter widget to show a text form field to display a date or clock dialog.\
-This widget extend TextField and has a similar behavior as TextFormField
+This widget extend TextField and has a similar behavior as TextFormField.
+It is the updated version of date_time_picker. The date_time_picker package has not incorporated with the latest intl version.
 
 ## Usage
 
@@ -13,8 +12,8 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 
 ```yaml
 dependencies:
-  ...
-  date_time_picker: "^2.1.0"
+```
+  date_time_picker_nw: "^1.0.0"
 ```
 
 In your library add the following import:
@@ -34,7 +33,7 @@ There are four presentations for DateTimePicker and can be defined in the type p
 * `DateTimePickerType.dateTimeSeparated` will display two text fields side by side, the first for date and the second for time. Each displaying their respective dialog box, datePicker and timePicker in the tap action;
   
 ``` dart
-DateTimePicker(
+DateTimePickerNw(
   type: date, // options: [date | time | dateTime | dateTimeSeparated], default is date
   ...
 )
@@ -43,7 +42,7 @@ DateTimePicker(
 initialValue or controller.text can be `null`, `empty` or a `DateTime string` otherwise it will throw an error.
 
 ``` dart
-DateTimePicker(
+DateTimePickerNw(
   initialValue: '',
   firstDate: DateTime(2000),
   lastDate: DateTime(2100),
@@ -61,7 +60,7 @@ More complete example:
 
 
 ``` dart
-DateTimePicker(
+DateTimePickerNw(
   type: DateTimePickerType.dateTimeSeparate,
   dateMask: 'd MMM, yyyy',
   initialValue: DateTime.now().toString(),

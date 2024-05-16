@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:date_time_picker/date_time_picker.dart';
+import 'package:date_time_picker_nw/date_time_picker_nw.dart';
 
 void main() {
   testWidgets('Testing instantiate DateTimePicker',
@@ -14,7 +14,7 @@ void main() {
       reason: 'DateTimePicker initial display date not found!',
     );
 
-    var dateTimePicker = find.byType(DateTimePicker);
+    var dateTimePicker = find.byType(DateTimePickerNw);
     expect(
       dateTimePicker,
       findsOneWidget,
@@ -71,7 +71,7 @@ class _MyWidgetState extends State<MyWidget> {
       home: Scaffold(
         body: Column(
           children: [
-            DateTimePicker(
+            DateTimePickerNw(
               initialValue: '2020-07-23',
               firstDate: DateTime(2000),
               lastDate: DateTime(2100),
